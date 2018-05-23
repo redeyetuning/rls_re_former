@@ -1,1 +1,12 @@
 <h1>This is the New Users Page</h1>
+
+<form action="/users" method="post">
+	<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+	<input type="text" name="username">
+	<label for="username">Username</label> 
+	<input type="email" name="email">
+	<label for="email">email</label>
+	<input type="password" name="password">
+	<label for="password">Password</label>
+	<input type="submit" value ="Submit">
+</form> 
