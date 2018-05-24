@@ -1,0 +1,7 @@
+<h1>This is the Show All Users Page</h1>
+<table>
+	<% @users.each do |u| %>
+		<tr><th><%= link_to(u.username, u) %></th><th><%= u.email %></th></tr>
+	<% end %>
+</table> 
+
