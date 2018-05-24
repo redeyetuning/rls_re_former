@@ -22,11 +22,14 @@
 <% end %> -->
 
 <%= form_for @user do |f| %>
-	<%= f.label :username %> 
+	<%= f.label :username, "Username" %>
 	<%= f.text_field :username %>
-	<%= f.label :email %>
-	<%= f.text_field :email %>
-	<%= f.label :password %>
+	</br>
+	<%= f.label :email, "Email" %>
+	<%= f.text_field :email, value: "example@example.com" %>
+	</br>
+	<%= f.label :password, "Password" %>
 	<%= f.password_field :password %>
+</br>
 	<%= f.submit "Create User" %>
 <% end %>
